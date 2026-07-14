@@ -1,0 +1,18 @@
+[package]
+name = "csvstrict"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "A strict CSV linter that checks files against RFC 4180 and real consumer profiles (Excel, BigQuery, Postgres COPY), pointing at the exact offending byte."
+license = "MIT"
+repository = "https://github.com/JaydenCJ/csvstrict"
+keywords = ["csv", "lint", "rfc4180", "bigquery", "data-quality"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+# None. The scanner, rule engine and reporters are implemented on std alone,
+# so `cargo install` never pulls code you have not read.
+
+[profile.release]
+strip = true
+lto = true

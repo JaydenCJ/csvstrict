@@ -1,0 +1,6 @@
+id,comment,amount
+1,"ok",100
+\.
+2,"never loaded",250
+3,,75
+4,"",0
